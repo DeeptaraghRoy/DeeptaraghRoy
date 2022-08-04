@@ -88,3 +88,48 @@ Date:   Thu Aug 4 20:32:02 2022 +0530
 
 DEEPTARAGH@DESKTOP-R5RE75A MINGW64 ~/test (master)
 $
+
+DEEPTARAGH@DESKTOP-R5RE75A MINGW64 ~/test (master)
+$ git difftool HEAD
+
+This message is displayed because 'diff.tool' is not configured.
+See 'git difftool --tool-help' or 'git help config' for more details.
+'git difftool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld kompare gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare smerge emerge vimdiff nvimdiff
+
+Viewing (1/1): 'demo.txt'
+Launch 'vimdiff' [Y/n]? Y
+2 files to edit
+
+DEEPTARAGH@DESKTOP-R5RE75A MINGW64 ~/test (master)
+$ git commit -m "added the commands"
+[master 985ae64] added the commands
+ 1 file changed, 90 insertions(+), 1 deletion(-)
+
+DEEPTARAGH@DESKTOP-R5RE75A MINGW64 ~/test (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+DEEPTARAGH@DESKTOP-R5RE75A MINGW64 ~/test (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1009 bytes | 1009.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/DeeptaraghRoy/DeeptaraghRoy.git
+   c1b4f60..985ae64  master -> master
+
+DEEPTARAGH@DESKTOP-R5RE75A MINGW64 ~/test (master)
+$ ^C
+
+DEEPTARAGH@DESKTOP-R5RE75A MINGW64 ~/test (master)
+$
